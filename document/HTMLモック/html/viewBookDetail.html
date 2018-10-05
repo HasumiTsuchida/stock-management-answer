@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>書籍在庫数変更画面</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+    		<a href="login.html">ログアウト</a>
+			<h3>書籍在庫数変更画面</h3>
+			<div class="span8">
+			  <div class="row">
+<!-- --ここから上を編集する必要はありません------------------ -->
+
+
+				<table class="table table-striped">
+				  <tr>
+				    <th nowrap>
+				      書籍名
+				    </th>
+				    <td>
+				      明解Java プログラミング入門
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      著者
+				    </th>
+				    <td>
+				      坂田健二
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      出版社
+				    </th>
+				    <td>
+				      秀和システム
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      価格
+				    </th>
+				    <td>
+				      2980円
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      ISBNコード
+				    </th>
+				    <td>
+				      4-7980-0437-5
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      発売日
+				    </th>
+				    <td>
+				      2012/11/29
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      説明
+				    </th>
+				    <td>
+				      本書は「Javaプログラミングをこれからはじめよう」という人、「Javaプログラミングを始めたけど、どうも理解できない箇所が……」という人向けにイラストを多く取り入れ、内容を視覚的に理解できます。またサンプルプログラムも短いものを数多く掲載しています。本書でJavaの基本を学んでください。
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      画像
+				    </th>
+				    <td>
+				      <img src="../img/c(0).jpg"/>
+				    </td>
+				  </tr>
+				  <tr>
+				    <th nowrap>
+				      在庫数
+				    </th>
+				    <td>
+						<form action="viewBookList.html" method="post">
+							<input type="text" name="stock"  value="10">
+							<input type="hidden" name="bookId" value="1">
+							<input class="btn" type="submit" value="更新">
+						</form>
+				    </td>
+				  </tr>
+				</table>
+
+
+<!-- --ここから下を編集する必要はありません------------------ -->
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
