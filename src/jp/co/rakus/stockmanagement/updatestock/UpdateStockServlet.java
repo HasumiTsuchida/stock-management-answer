@@ -53,7 +53,6 @@ public class UpdateStockServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("doGet!!");
 		doPost(request, response);
 	}
 

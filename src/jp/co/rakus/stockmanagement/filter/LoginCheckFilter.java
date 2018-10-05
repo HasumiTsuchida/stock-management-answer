@@ -60,7 +60,6 @@ public class LoginCheckFilter implements Filter {
 		// URI部分を破棄する
 		String replaced = urlparam.replaceAll(
 				httpServletRequest.getContextPath(), "");
-		System.out.println(replaced);
 
 		HttpServletRequest httpRequest = (HttpServletRequest) request;
 		HttpSession session = httpRequest.getSession();
