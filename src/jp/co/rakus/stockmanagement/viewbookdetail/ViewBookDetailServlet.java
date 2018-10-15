@@ -21,9 +21,9 @@ import jp.co.rakus.stockmanagement.common.Book;
 public class ViewBookDetailServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// リクエストパラメータを取得します
 		String stringBookId = request.getParameter("id");
 		int bookId = Integer.parseInt(stringBookId);
@@ -32,14 +32,13 @@ public class ViewBookDetailServlet extends HttpServlet {
 		Book book = ViewBookDetailLogic.execute(bookId);
 		request.setAttribute("book", book);
 
-		RequestDispatcher rd = request
-				.getRequestDispatcher("/jsp/viewBookDetail.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/jsp/viewBookDetail.jsp");
 		rd.forward(request, response);
 	}
 
 	@Override
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 }
