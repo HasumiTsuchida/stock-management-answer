@@ -14,8 +14,7 @@ import java.sql.SQLException;
 public class MemberDao {
 	//初期記載の「members」から「member」にテーブル変更 author 土田
 	//コメント追加
-	//コンフリクト起こせた！
-	//ローカルmaster branchからなにか来る予感
+	//fetch使ってみようの巻き
 
 	private final static String tableName = "member";
 
